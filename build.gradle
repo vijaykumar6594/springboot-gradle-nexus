@@ -37,12 +37,12 @@ publishing {
 publications {
 maven(MavenPublication) {
 artifact bootJar
-}}}
+}}
 repositories {
 maven {
 url "http://54.234.220.25:8081/repository/maven-snapshots/"
 credentials {
 username "admin"
 password "admin123"
-}}}
+}}}}
 

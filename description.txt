@@ -1,0 +1,1 @@
+This code can be used to build the pkg using gradle and publish artefact into nexus

@@ -4,6 +4,7 @@ plugins {
     id 'java'
     id 'war'
     id "org.sonarqube" version "3.3"
+    id "maven-publish"
 }
 
 group = 'com.example'
@@ -32,3 +33,16 @@ sonarqube {
                 property "sonar.login", "6d7dcd10b8b2943128d0f7c5db306bf5aa723aa6"
     }
 }
+publishing {
+publications {
+maven(MavenPublication) {
+artifact bootjar
+}}}
+repositories {
+maven {
+url “http://54.242.57.33:8081/repository/maven-snapshots"
+credentials {
+username "admin"
+password "admin123"
+}}}}
+

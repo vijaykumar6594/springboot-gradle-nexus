@@ -40,7 +40,7 @@ artifact bootJar
 }}
 repositories {
 maven {
-url "http://52.90.70.156:8081/repository/maven-releases"
+url "http://52.90.70.156:8081/repository/maven-snapshots/"
 credentials {
 username "admin"
 password "admin123"

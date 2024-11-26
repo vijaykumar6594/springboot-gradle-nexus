@@ -42,7 +42,7 @@ repositories {
 maven {
 url "http://54.147.15.91:8081/repository/maven-snapshots/"
 credentials {
-username "admin"
-password "admin123"
+username project.repoUser
+password project.repoPassword
 }}}}
 

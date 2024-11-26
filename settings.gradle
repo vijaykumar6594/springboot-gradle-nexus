@@ -1,4 +1,3 @@
 rootProject.name = 'springboot-tomcat-gradle-war'
-username project.repoUser = 'admin'
-password project.repoPassword = 'admin123'
+
 

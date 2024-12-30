@@ -45,5 +45,5 @@ url "http://54.147.15.91:8081/repository/maven-snapshots/"
 credentials {
 username "admin"
 password "admin123"
-}}}}
+}}}
 

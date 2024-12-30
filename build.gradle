@@ -40,14 +40,10 @@ artifact bootJar
 }}
 repositories {
 maven {
-    if(project.version.endsWith('-SNAPSHOT')){
 url "http://54.147.15.91:8081/repository/maven-snapshots/"
-    }
-    else{
-        url "http://54.147.15.91:8081/repository/maven-releases/"
-    }
+}
 credentials {
-username project.repoUser
-password project.repoPassword
+username "admin"
+password "admin123"
 }}}}
 

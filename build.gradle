@@ -8,7 +8,7 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-RELEASE'
+version = '0.0.7-RELEASE'
 sourceCompatibility = '1.8'
 
 repositories {
@@ -42,7 +42,7 @@ repositories {
 maven {
 url "http://54.86.16.150:8081/repository/maven-releases/"
 credentials {
-username "admin"
-password "admin123"
+username project.username
+password project.password
 }}}}
 

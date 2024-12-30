@@ -8,7 +8,7 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.7-RELEASE'
+version = '0.0.7-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
@@ -40,7 +40,12 @@ artifact bootJar
 }}
 repositories {
 maven {
-url "http://54.86.16.150:8081/repository/maven-releases/"
+    if(project.version.endsWith('-SNAPSHOT')){
+url "http://54.86.16.150:8081/repository/maven-snapshots/"
+    }
+    else{
+        url "http://54.86.16.150:8081/repository/maven-releases/"
+    }
 credentials {
 username project.username
 password project.password
